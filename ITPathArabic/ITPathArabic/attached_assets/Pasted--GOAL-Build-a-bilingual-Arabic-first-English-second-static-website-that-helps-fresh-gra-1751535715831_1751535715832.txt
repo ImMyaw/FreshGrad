@@ -1,0 +1,131 @@
+🎯  GOAL  
+Build a **bilingual (Arabic‑first, English‑second) static website** that helps fresh graduates pick the right entry‑level certifications that *actual Saudi employers* ask for in LinkedIn job posts (July 2025).  
+The site must ship as three self‑contained files — **index.html, styles.css, script.js** — with **NO build tools**. I want clean, modern code that I can export and host anywhere (GitHub Pages / Netlify / Vercel).
+
+--------------------------------------------------------------------
+📐   DESIGN & UX GUIDELINES
+--------------------------------------------------------------------
+1. **Look & Feel**   Modern, light tech vibe. Primary color `#2563eb`, accent `#f59e0b`, plenty of whitespace, rounded‑xl cards.  
+2. **RTL First**     Default language = Arabic (`lang="ar" dir="rtl"`). Include Google Font **“Cairo”**.  
+3. **Language Toggle**   Top‑right switcher 👉 saves choice in localStorage. Switch all text *inline* (no page reload).  
+4. **Responsive**   Mobile → 1‑col; ≥768px → 2‑col; ≥1024px → 3‑col grid.  
+5. **Navigation**   Sticky bar with logo “مساري | My Career”, links scroll‑smooth to #tracks, #about, #contact.  
+6. **Dark Mode**    Toggle beside language switch.  
+7. **Animations**   Cards fade‑up on scroll (CSS keyframes, no external libs).  
+8. **Accessibility**   Proper aria‑labels, keyboard focus styles.
+
+--------------------------------------------------------------------
+🔗   STRUCTURE
+--------------------------------------------------------------------
+<header>   Hero with tagline, CTA button ↓ “ابدأ مسارك الآن”  
+<nav>      Links + toggles  
+<main>     Section #tracks → Accordion for each career path  
+           Section #about  → Short trainer bio  
+           Section #contact→ Simple form (name/email/msg – frontend only)  
+<footer>   © 2025 مساري. كل الحقوق محفوظة.
+
+--------------------------------------------------------------------
+🚀   CONTENT  (Arabic shown first / English after “|”)  
+--------------------------------------------------------------------
+##  المسارات المهنية (Certification Tracks)
+
+### 1) البنية التحتية لتقنية المعلومات | IT Infrastructure
+- **CCNA – Cisco Certified Network Associate**  
+- **CompTIA Network+**  
+- **Cisco CCT / CCST**  
+- **Microsoft Windows Server Hybrid Admin Associate**  
+- **Fortinet NSE 4**  
+
+### 2) الحوسبة السحابية | Cloud Computing
+- **AWS Certified Solutions Architect – Associate**  
+- **AWS Cloud Practitioner**  
+- **Azure Administrator Associate (AZ‑104)**  
+- **Azure Fundamentals (AZ‑900)**  
+- **HashiCorp Terraform Associate**  
+
+### 3) الأمن السيبراني وإدارة الحوكمة | Cybersecurity & GRC  
+(Use a nested Accordion with four tabs)
+
+####   أ. الأساسيات | Foundations  
+- ISC2 **Certified in Cybersecurity (CC)**  
+- CompTIA **Security+**  
+- Google **Cybersecurity Certificate**
+
+####   ب. تشغيل SOC وتحليل التهديدات | SOC & Threat Intel  
+- EC‑Council **Certified SOC Analyst (CSA)**  
+- **MITRE ATT&CK Defender (MAD)**  
+- IBM **Cybersecurity Analyst**
+
+####   ج. الاختبار والاختراق | Penetration Testing  
+- **eJPT v2** – INE  
+- **OSCP** – Offensive Security  
+- **eCPPT** – INE  
+
+####   د. الحوكمة والمخاطر والامتثال | GRC  
+- **ISO 27001 Lead Implementer / Auditor**  
+- **CISA**  
+- **CISM**  
+- **CRISC**  
+- **NCA Certified** (KSA Govt.)
+
+##### 🔸  شهادات INE (عرضها كبطاقات أفقية تحت PenTest)
+| الشهادة | المستوى | شرح قصير |
+| ------- | ------- | -------- |
+| eJPT v2 | مبتدئ | اختبار عملي عبر VPN Lab |
+| eCPPT | متوسط | استغلال شبكي شامل |
+| eWPT | متوسط | Web‑App Pentest |
+| eCPTX | خبير | Red Team / Exploit Dev |
+| Cloud Security Path | مبتدئ | AWS/GCP attacker‑defender |
+| SOC Analyst Training | مبتدئ | لوحات SIEM واقعية |
+
+### 4) الدعم الفني | IT Support  
+- **CompTIA A+**  
+- **ITIL 4 Foundation**  
+- **Google IT Support**  
+- **Microsoft 365 Fundamentals (MS‑900)**  
+- **Apple ACSP**
+
+### 5) الهندسة والتصميم | Engineering & CAD
+- **Autodesk Certified Professional – AutoCAD**  
+- **Revit Certified Professional**  
+- **SolidWorks CSWA/CSWP**  
+- **Siemens Certified Automation Technician**  
+- **CLAD – LabVIEW**
+
+### 6) تحليل البيانات والبرمجة | Data & Software
+- **PL‑300 Power BI Data Analyst**  
+- **Google Data Analytics**  
+- **IBM Data Science**  
+- **Meta Front‑End Developer**  
+- **AWS Developer – Associate**  
+- **Oracle Java Associate (OCA)**
+
+### 7) إدارة المشاريع والمهارات القيادية | Project Management & Business IT
+- **CAPM (PMI)**  
+- **Prince2 Foundation**  
+- **Scrum Master Certified (SMC)**  
+- **Google Project Management**  
+- **AgilePM Foundation**
+
+--------------------------------------------------------------------
+🛠️   TECH DETAILS  (put in code comments)
+--------------------------------------------------------------------
+- Use ES6 modules if needed.  
+- Create `translations.js` holding Arabic ↔ English key‑value pairs.  
+- `script.js` handles: darkMode(), langToggle(), accordion(), formValidation().  
+- No external JS frameworks; vanilla only.  
+- Host icons as inline SVG (hero graphic idea: stylised graduation cap & cloud).  
+- Add a comment block at end of index.html with 3‑step deploy note (drag‑and‑drop to Netlify, or `git push` to GitHub Pages).
+
+--------------------------------------------------------------------
+👤   TRAINER‑VOICE  (content tone)
+--------------------------------------------------------------------
+- Write headlines motivational: “ابدأ خطوتك الأولى”, “اختر شهادتك واحجز مقعدك”.  
+- Include one‑sentence career tip after each certification list, e.g.  
+  > “⚡ نصيحة مدرب: بعد CCNA جرّب مشروع Lab محاكاة BGP لتحصل على مقابلات أسرع.”
+
+--------------------------------------------------------------------
+✅   DELIVERABLE
+--------------------------------------------------------------------
+Return **the three files** ready to download.  
+DO NOT output anything but the files.

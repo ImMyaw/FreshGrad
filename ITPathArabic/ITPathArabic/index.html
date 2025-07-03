@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مساري | My Career - دليل الشهادات المهنية في تقنية المعلومات</title>
+    <meta name="description" content="دليل شامل للشهادات المهنية في تقنية المعلومات للمحترفين السعوديين. اكتشف أفضل الشهادات المطلوبة في السوق السعودي.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h1 data-key="logo">مساري | My Career</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#hero" data-key="home">الرئيسية</a>
+                    <a href="#tracks" data-key="certifications">الشهادات</a>
+                    <a href="#about" data-key="about">نبذة</a>
+                    <a href="#contact" data-key="contact">تواصل</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <button class="lang-toggle" id="langToggle">
+                        <span class="lang-ar">ع</span>
+                        <span class="lang-en">EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-key="heroTitle">دليلك الشامل للشهادات المهنية في تقنية المعلومات</h1>
+                    <p data-key="heroSubtitle">اكتشف أفضل الشهادات المطلوبة في السوق السعودي وابدأ مسارك المهني بثقة</p>
+                    <button class="cta-button" onclick="scrollToSection('tracks')" data-key="startJourney">
+                        ابدأ مسارك الآن
+                    </button>
+                </div>
+                <div class="hero-graphic">
+                    <svg width="400" height="300" viewBox="0 0 400 300" fill="none">
+                        <!-- Graduation Cap -->
+                        <path d="M200 50L350 100L200 150L50 100L200 50Z" fill="#2563eb" opacity="0.8"/>
+                        <path d="M200 50L350 100L200 150L50 100L200 50Z" stroke="#2563eb" stroke-width="2"/>
+                        <rect x="320" y="95" width="60" height="80" rx="5" fill="#f59e0b"/>
+                        <!-- Cloud -->
+                        <ellipse cx="120" cy="200" rx="40" ry="25" fill="#2563eb" opacity="0.3"/>
+                        <ellipse cx="140" cy="190" rx="35" ry="20" fill="#2563eb" opacity="0.4"/>
+                        <ellipse cx="100" cy="190" rx="30" ry="18" fill="#2563eb" opacity="0.5"/>
+                        <!-- Certificates -->
+                        <rect x="250" y="180" width="80" height="60" rx="8" fill="#f59e0b" opacity="0.7"/>
+                        <rect x="260" y="190" width="60" height="3" rx="1" fill="#fff"/>
+                        <rect x="260" y="200" width="40" height="3" rx="1" fill="#fff"/>
+                        <rect x="260" y="210" width="50" height="3" rx="1" fill="#fff"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number">40+</h3>
+                    <p class="stat-label" data-key="professionalCertifications">شهادة مهنية</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">8</h3>
+                    <p class="stat-label" data-key="careerTracks">مسارات مهنية</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">5K+</h3>
+                    <p class="stat-label" data-key="successfulProfessionals">متخصص نجح</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Tracks Section -->
+    <section id="tracks" class="tracks">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-key="certificationTracks">المسارات المهنية للشهادات</h2>
+                <p data-key="tracksDescription">اختر المسار المناسب لمسيرتك المهنية واكتشف الشهادات المطلوبة في السوق السعودي</p>
+            </div>
+
+            <div class="tracks-grid">
+                <!-- IT Infrastructure -->
+                <div class="track-card" data-track="infrastructure">
+                    <div class="track-header">
+                        <div class="track-icon infrastructure">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <div class="track-info">
+                            <h3 data-key="itInfrastructure">البنية التحتية لتقنية المعلومات</h3>
+                            <p data-key="itInfrastructureDesc">إدارة وتصميم الشبكات والخوادم والبنية التحتية</p>
+                        </div>
+                        <button class="expand-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="track-content">
+                        <div class="certifications">
+                            <div class="cert-item">
+                                <h4>CCNA – Cisco Certified Network Associate</h4>
+                                <p class="cert-description" data-key="ccnaDesc">شهادة أساسية في الشبكات تغطي التوجيه والتبديل وأساسيات البروتوكولات. مطلوبة في معظم وظائف الشبكات في السوق السعودي.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">Cisco</span>
+                                    <span class="level professional">متوسط</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>CompTIA Network+</h4>
+                                <p class="cert-description" data-key="networkPlusDesc">شهادة محايدة في أساسيات الشبكات تعطي فهماً شاملاً لتقنيات الشبكات المختلفة. نقطة بداية ممتازة لمن يريد دخول مجال الشبكات.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">CompTIA</span>
+                                    <span class="level entry">مستوى دخولي</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>Microsoft Windows Server Hybrid Admin Associate</h4>
+                                <p class="cert-description" data-key="windowsServerDesc">إدارة بيئات Windows Server في البيئات المختلطة (السحابية والمحلية). مهارة مطلوبة جداً في الشركات التي تستخدم نظم مايكروسوفت.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">Microsoft</span>
+                                    <span class="level professional">متوسط</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>Fortinet NSE 4</h4>
+                                <p class="cert-description" data-key="fortinetDesc">تخصص في حلول الأمان وجدران الحماية من فورتينت. مطلوبة في الشركات التي تعتمد على حلول الأمان المتقدمة.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">Fortinet</span>
+                                    <span class="level professional">متوسط</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trainer-tip">
+                            <p data-key="infrastructureTip">⚡ نصيحة مدرب: بعد CCNA جرّب مشروع Lab محاكاة BGP لتحصل على مقابلات أسرع.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud Computing -->
+                <div class="track-card" data-track="cloud">
+                    <div class="track-header">
+                        <div class="track-icon cloud">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
+                        </div>
+                        <div class="track-info">
+                            <h3 data-key="cloudComputing">الحوسبة السحابية</h3>
+                            <p data-key="cloudComputingDesc">تصميم وإدارة الحلول السحابية المتقدمة</p>
+                        </div>
+                        <button class="expand-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="track-content">
+                        <div class="certifications">
+                            <div class="cert-item">
+                                <h4>AWS Certified Solutions Architect – Associate</h4>
+                                <p class="cert-description" data-key="awsSaaDesc">تصميم وبناء أنظمة موزعة على منصة AWS. هذه الشهادة مطلوبة جداً في السوق السعودي وتفتح أبواب وظائف عالية الراتب في الحوسبة السحابية.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">AWS</span>
+                                    <span class="level professional">متوسط</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>AWS Cloud Practitioner</h4>
+                                <p class="cert-description" data-key="awsCpDesc">المدخل الأساسي لمنصة AWS يغطي المفاهيم الأساسية للحوسبة السحابية. نقطة بداية مثالية لمن يريد دخول مجال AWS.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">AWS</span>
+                                    <span class="level entry">مستوى دخولي</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>Azure Administrator Associate (AZ-104)</h4>
+                                <p class="cert-description" data-key="azureAdminDesc">إدارة الموارد السحابية على منصة Microsoft Azure. مطلوبة في الشركات التي تستخدم نظم مايكروسوفت والبيئات المختلطة.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">Microsoft</span>
+                                    <span class="level professional">متوسط</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>HashiCorp Terraform Associate</h4>
+                                <p class="cert-description" data-key="terraformDesc">أتمتة إدارة البنية التحتية كرمز (Infrastructure as Code). مهارة حديثة ومطلوبة في DevOps والحوسبة السحابية.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">HashiCorp</span>
+                                    <span class="level professional">متوسط</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trainer-tip">
+                            <p data-key="cloudTip">⚡ نصيحة مدرب: ابدأ بـ AWS Cloud Practitioner ثم انتقل لـ Solutions Architect للحصول على راتب أعلى.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="track-card" data-track="cybersecurity">
+                    <div class="track-header">
+                        <div class="track-icon cybersecurity">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <div class="track-info">
+                            <h3 data-key="cybersecurity">الأمن السيبراني وإدارة الحوكمة</h3>
+                            <p data-key="cybersecurityDesc">حماية الأنظمة والبيانات من التهديدات السيبرانية</p>
+                        </div>
+                        <button class="expand-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="track-content">
+                        <div class="cyber-subcategories">
+                            <div class="subcategory">
+                                <h4 data-key="foundations">أ. الأساسيات</h4>
+                                <div class="certifications">
+                                    <div class="cert-item">
+                                        <h5>ISC2 Certified in Cybersecurity (CC)</h5>
+                                        <p class="cert-description" data-key="isc2ccDesc">شهادة أساسية في الأمن السيبراني من ISC2 تغطي المفاهيم الأساسية للأمان. مجانية ومناسبة لبداية مسيرة الأمن السيبراني.</p>
+                                        <div class="cert-meta">
+                                            <span class="provider">ISC2</span>
+                                            <span class="level entry">مستوى دخولي</span>
+                                        </div>
+                                    </div>
+                                    <div class="cert-item">
+                                        <h5>CompTIA Security+</h5>
+                                        <p class="cert-description" data-key="securityPlusDesc">شهادة معتمدة دولياً في أساسيات الأمن السيبراني. مطلوبة في معظم الوظائف الحكومية والخاصة في مجال الأمان.</p>
+                                        <div class="cert-meta">
+                                            <span class="provider">CompTIA</span>
+                                            <span class="level professional">متوسط</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subcategory">
+                                <h4 data-key="penTesting">ج. الاختبار والاختراق</h4>
+                                <div class="certifications">
+                                    <div class="cert-item">
+                                        <h5>eJPT v2 – INE</h5>
+                                        <p class="cert-description" data-key="ejptDesc">اختبار اختراق عملي للمبتدئين يحاكي بيئة حقيقية. يعطي خبرة عملية في اختبار الاختراق وهو مطلوب في الشركات المتخصصة في الأمان.</p>
+                                        <div class="cert-meta">
+                                            <span class="provider">INE</span>
+                                            <span class="level entry">مستوى دخولي</span>
+                                        </div>
+                                    </div>
+                                    <div class="cert-item">
+                                        <h5>OSCP – Offensive Security</h5>
+                                        <p class="cert-description" data-key="oscpDesc">الشهادة الذهبية في اختبار الاختراق الأخلاقي. صعبة جداً ولكنها معترف بها عالمياً وتفتح أبواب وظائف عالية الراتب في الأمن السيبراني.</p>
+                                        <div class="cert-meta">
+                                            <span class="provider">Offensive Security</span>
+                                            <span class="level expert">خبير</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subcategory">
+                                <h4 data-key="governance">د. الحوكمة والمخاطر والامتثال</h4>
+                                <div class="certifications">
+                                    <div class="cert-item">
+                                        <h5>ISO 27001 Lead Implementer</h5>
+                                        <div class="cert-meta">
+                                            <span class="provider">ISO</span>
+                                            <span class="level professional">متوسط</span>
+                                        </div>
+                                    </div>
+                                    <div class="cert-item">
+                                        <h5>NCA Certified (KSA Govt.)</h5>
+                                        <div class="cert-meta">
+                                            <span class="provider">NCA</span>
+                                            <span class="level professional">متوسط</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trainer-tip">
+                            <p data-key="cybersecurityTip">⚡ نصيحة مدرب: ابدأ بـ CompTIA Security+ ثم توجه لـ NCA للسوق السعودي المحلي.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IT Support -->
+                <div class="track-card" data-track="support">
+                    <div class="track-header">
+                        <div class="track-icon support">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="track-info">
+                            <h3 data-key="itSupport">الدعم الفني</h3>
+                            <p data-key="itSupportDesc">دعم المستخدمين وحل المشاكل التقنية</p>
+                        </div>
+                        <button class="expand-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="track-content">
+                        <div class="certifications">
+                            <div class="cert-item">
+                                <h4>CompTIA A+</h4>
+                                <p class="cert-description" data-key="aPlusDesc">الشهادة الأساسية في دعم الحاسوب وإصلاح الأعطال. البوابة الأولى لدخول مجال تقنية المعلومات ومطلوبة في معظم وظائف الدعم الفني.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">CompTIA</span>
+                                    <span class="level entry">مستوى دخولي</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>ITIL 4 Foundation</h4>
+                                <p class="cert-description" data-key="itilDesc">إطار عمل لإدارة خدمات تقنية المعلومات يركز على تحسين العمليات. مطلوبة في الشركات الكبيرة التي تهتم بجودة الخدمات التقنية.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">ITIL</span>
+                                    <span class="level entry">مستوى دخولي</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>Google IT Support</h4>
+                                <p class="cert-description" data-key="googleItDesc">برنامج شامل من جوجل يغطي أساسيات الدعم الفني وإدارة الأنظمة. معترف به دولياً ويساعد في الحصول على وظائف دعم فني.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">Google</span>
+                                    <span class="level entry">مستوى دخولي</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trainer-tip">
+                            <p data-key="supportTip">⚡ نصيحة مدرب: CompTIA A+ هو البوابة الأولى لدخول مجال تقنية المعلومات.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engineering -->
+                <div class="track-card" data-track="engineering">
+                    <div class="track-header">
+                        <div class="track-icon engineering">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5 12,2"></polygon>
+                                <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                                <polyline points="22,8.5 12,15.5 2,8.5"></polyline>
+                            </svg>
+                        </div>
+                        <div class="track-info">
+                            <h3 data-key="engineering">الهندسة والتصميم</h3>
+                            <p data-key="engineeringDesc">تصميم وتطوير الحلول الهندسية المتقدمة</p>
+                        </div>
+                        <button class="expand-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="track-content">
+                        <div class="certifications">
+                            <div class="cert-item">
+                                <h4>Autodesk Certified Professional – AutoCAD</h4>
+                                <p class="cert-description" data-key="autocadDesc">الشهادة المهنية في برنامج أوتوكاد للرسم الهندسي والتصميم. أساسية لجميع مجالات الهندسة والعمارة في السوق السعودي.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">Autodesk</span>
+                                    <span class="level professional">متوسط</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>SolidWorks CSWA/CSWP</h4>
+                                <p class="cert-description" data-key="solidworksDesc">شهادات في التصميم ثلاثي الأبعاد والنمذجة الهندسية. مطلوبة في الهندسة الميكانيكية وتصميم المنتجات.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">SolidWorks</span>
+                                    <span class="level professional">متوسط</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>CLAD – LabVIEW</h4>
+                                <p class="cert-description" data-key="labviewDesc">برمجة أنظمة القياس والتحكم الآلي. مطلوبة في الهندسة الكهربائية والأتمتة الصناعية.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">National Instruments</span>
+                                    <span class="level professional">متوسط</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trainer-tip">
+                            <p data-key="engineeringTip">⚡ نصيحة مدرب: AutoCAD أساسي لجميع مجالات الهندسة في السوق السعودي.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data & Programming -->
+                <div class="track-card" data-track="data">
+                    <div class="track-header">
+                        <div class="track-icon data">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                        </div>
+                        <div class="track-info">
+                            <h3 data-key="dataAnalytics">تحليل البيانات والبرمجة</h3>
+                            <p data-key="dataAnalyticsDesc">تحليل البيانات وتطوير الحلول البرمجية</p>
+                        </div>
+                        <button class="expand-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="track-content">
+                        <div class="certifications">
+                            <div class="cert-item">
+                                <h4>PL-300 Power BI Data Analyst</h4>
+                                <p class="cert-description" data-key="powerBiDesc">تحليل البيانات وإنشاء التقارير والرؤى التجارية باستخدام Power BI. مطلوبة جداً في الشركات السعودية لاتخاذ القرارات المبنية على البيانات.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">Microsoft</span>
+                                    <span class="level professional">متوسط</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>Google Data Analytics</h4>
+                                <p class="cert-description" data-key="googleDataDesc">برنامج شامل من جوجل في تحليل البيانات باستخدام أدوات مختلفة. نقطة بداية ممتازة لمن يريد دخول مجال تحليل البيانات.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">Google</span>
+                                    <span class="level entry">مستوى دخولي</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>AWS Developer – Associate</h4>
+                                <p class="cert-description" data-key="awsDevDesc">تطوير ونشر التطبيقات على منصة AWS. مطلوبة للمطورين الذين يعملون مع الحوسبة السحابية والتطبيقات الحديثة.</p>
+                                <div class="cert-meta">
+                                    <span class="provider">AWS</span>
+                                    <span class="level professional">متوسط</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trainer-tip">
+                            <p data-key="dataTip">⚡ نصيحة مدرب: Power BI مطلوب جداً في الشركات السعودية للتحليل والتقارير.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Management -->
+                <div class="track-card" data-track="project">
+                    <div class="track-header">
+                        <div class="track-icon project">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <div class="track-info">
+                            <h3 data-key="projectManagement">إدارة المشاريع والمهارات القيادية</h3>
+                            <p data-key="projectManagementDesc">قيادة وإدارة المشاريع التقنية والتجارية</p>
+                        </div>
+                        <button class="expand-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="track-content">
+                        <div class="certifications">
+                            <div class="cert-item">
+                                <h4>CAPM (PMI)</h4>
+                                <div class="cert-meta">
+                                    <span class="provider">PMI</span>
+                                    <span class="level beginner">مبتدئ</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>Prince2 Foundation</h4>
+                                <div class="cert-meta">
+                                    <span class="provider">AXELOS</span>
+                                    <span class="level beginner">مبتدئ</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>Scrum Master Certified (SMC)</h4>
+                                <div class="cert-meta">
+                                    <span class="provider">Scrum Study</span>
+                                    <span class="level professional">متوسط</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trainer-tip">
+                            <p data-key="projectTip">⚡ نصيحة مدرب: CAPM نقطة البداية الممتازة لدخول مجال إدارة المشاريع.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Fields -->
+                <div class="track-card" data-track="other">
+                    <div class="track-header">
+                        <div class="track-icon other">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"></path>
+                            </svg>
+                        </div>
+                        <div class="track-info">
+                            <h3 data-key="otherFields">مجالات أخرى</h3>
+                            <p data-key="otherFieldsDesc">تخصصات متنوعة في مجال الأعمال والتقنية</p>
+                        </div>
+                        <button class="expand-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="track-content">
+                        <div class="certifications">
+                            <div class="cert-item">
+                                <h4>Google Digital Marketing</h4>
+                                <div class="cert-meta">
+                                    <span class="provider">Google</span>
+                                    <span class="level beginner">مبتدئ</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>Microsoft Excel Expert</h4>
+                                <div class="cert-meta">
+                                    <span class="provider">Microsoft</span>
+                                    <span class="level professional">متوسط</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <h4>AWS AI Practitioner</h4>
+                                <div class="cert-meta">
+                                    <span class="provider">AWS</span>
+                                    <span class="level beginner">مبتدئ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trainer-tip">
+                            <p data-key="otherTip">⚡ نصيحة مدرب: Excel المتقدم مطلوب في جميع القطاعات والشركات.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-key="aboutTitle">نبذة عن المدرب</h2>
+                    <p data-key="aboutDescription">
+                        مرحباً، أنا عبدالرحمن شحار، مدرب معتمد في مجال تقنية المعلومات مع خبرة واسعة في السوق السعودي. 
+                        أساعد المحترفين والخريجين الجدد على اختيار أفضل الشهادات المهنية التي تناسب احتياجات السوق المحلي.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong data-key="phone">الهاتف:</strong>
+                            <span>0536995517</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong data-key="email">البريد الإلكتروني:</strong>
+                            <span>Abdualrahman.a.sh@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+                            <circle cx="100" cy="100" r="80" fill="#2563eb" opacity="0.1"/>
+                            <circle cx="100" cy="80" r="30" fill="#2563eb" opacity="0.8"/>
+                            <path d="M40 160 Q100 120 160 160" stroke="#2563eb" stroke-width="4" fill="none"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h2 data-key="contactTitle">تواصل معنا</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-key="nameLabel">الاسم</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-key="emailLabel">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-key="messageLabel">الرسالة</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button" data-key="sendMessage">
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-key="logo">مساري | My Career</h3>
+                    <p data-key="footerDescription">دليلك الشامل للشهادات المهنية في تقنية المعلومات</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-key="quickLinks">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#hero" data-key="home">الرئيسية</a></li>
+                        <li><a href="#tracks" data-key="certifications">الشهادات</a></li>
+                        <li><a href="#about" data-key="about">نبذة</a></li>
+                        <li><a href="#contact" data-key="contact">تواصل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-key="contactInfo">معلومات التواصل</h4>
+                    <p data-key="phone">الهاتف: 0536995517</p>
+                    <p data-key="email">البريد: Abdualrahman.a.sh@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span data-key="logo">مساري | My Career</span>. <span data-key="rightsReserved">كل الحقوق محفوظة</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+🚀 DEPLOYMENT INSTRUCTIONS:
+1. Upload all three files (index.html, styles.css, script.js) to your web host
+2. For GitHub Pages: Push to main branch and enable Pages in repo settings
+3. For Netlify: Drag and drop the folder to netlify.com/drop
+4. For Vercel: Connect your GitHub repo or use CLI: vercel --prod
+-->

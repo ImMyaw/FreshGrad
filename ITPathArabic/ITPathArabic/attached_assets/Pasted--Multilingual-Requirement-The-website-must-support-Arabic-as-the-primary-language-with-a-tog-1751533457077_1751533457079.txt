@@ -1,0 +1,77 @@
+🔹 Multilingual Requirement
+The website must support **Arabic as the primary language**, with a toggle button that switches to **English**.  
+- Default load: Arabic (`lang="ar"`, `dir="rtl"`)  
+- Toggle should swap all text (no reload).
+- Use JavaScript to store the selected language in `localStorage`.
+
+🔹 Certification Tracks to Include (Arabic first, English below as fallback)
+
+1. **البنية التحتية لتقنية المعلومات (IT Infrastructure)**  
+   - + CompTIA A+  
+   - + CompTIA Network+  
+   - + CompTIA Server+  
+   - + Microsoft MTA: Networking Fundamentals  
+   - + Cisco CCNA  
+
+2. **الحوسبة السحابية (Cloud Computing)**  
+   - + AWS Certified Cloud Practitioner  
+   - + Microsoft Azure Fundamentals (AZ-900)  
+   - + Google Cloud Digital Leader  
+   - + IBM Cloud Essentials  
+   - + Oracle Cloud Infrastructure Foundations  
+
+3. **الأمن السيبراني وإدارة المخاطر (Cybersecurity & GRC)**  
+   - + CompTIA Security+  
+   - + ISC2 Certified in Cybersecurity (CC)  
+   - + EC-Council CEH  
+   - + ISO 27001 Foundation  
+   - + Certified Risk and Information Systems Control (CRISC)  
+
+4. **الدعم الفني (IT Support)**  
+   - + Google IT Support Professional Certificate  
+   - + CompTIA IT Fundamentals (ITF+)  
+   - + HDI Support Center Analyst  
+   - + Microsoft 365 Certified: Fundamentals  
+
+5. **الهندسة التقنية (Engineering Fields)**  
+   - + AutoCAD Certification (Autodesk)  
+   - + SolidWorks Associate (CSWA)  
+   - + MATLAB Certification  
+   - + Certified LabVIEW Associate Developer  
+   - + Electrical Engineering Fundamentals (NCEES FE)  
+
+6. **تحليل البيانات والبرمجة (Data/Software)**  
+   - + Microsoft Power BI Data Analyst Associate  
+   - + Google Data Analytics Certificate  
+   - + IBM Data Science Professional Certificate  
+   - + Meta Front-End Developer  
+   - + Oracle Java Foundations  
+
+7. **إدارة المشاريع والمهارات الإدارية (Project Management)**  
+   - + CAPM (PMI) – Associate Level  
+   - + Scrum Foundation Professional Certificate  
+   - + PRINCE2 Foundation  
+   - + Agile Essentials  
+   - + Google Project Management Certificate  
+
+8. **مجالات أخرى مناسبة للخريجين الجدد (Other roles for fresh grads)**  
+   - + Digital Marketing: Google Digital Garage  
+   - + Business Analysis: ECBA – IIBA  
+   - + AI Basics: Elements of AI (University of Helsinki)  
+   - + Excel/Data Entry: Microsoft Office Specialist  
+   - + ITIL 4 Foundation – IT Service Management  
+
+🔹 Display Method
+- Each track appears as a **card** with:
+   - Title (Arabic + English)
+   - Icon (use SVG or Emoji if needed)
+   - List of top 3–5 beginner-friendly certifications
+   - “عرض التفاصيل” (View Details) button
+
+- When clicked, the card expands to show:
+   - Description of the field
+   - Who it’s suitable for
+   - Certification details (Name – Level – Provider)
+
+- Keep layout fully responsive and RTL-aware.  
+- All labels, nav, buttons, and certifications must **translate dynamically** when toggling to English.  

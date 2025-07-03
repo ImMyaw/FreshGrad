@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Custom colors for the design */
+  --primary-blue: hsl(207, 90%, 54%);
+  --accent-orange: hsl(32, 95%, 51%);
+  --text-primary: hsl(214, 32%, 9%);
+  --text-secondary: hsl(217, 11%, 45%);
+  --bg-primary: hsl(0, 0%, 100%);
+  --bg-secondary: hsl(210, 40%, 98%);
+  --border-color: hsl(214, 32%, 91%);
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+  
+  /* Custom colors for dark mode */
+  --primary-blue: hsl(207, 90%, 54%);
+  --accent-orange: hsl(32, 95%, 51%);
+  --text-primary: hsl(210, 40%, 98%);
+  --text-secondary: hsl(217, 32%, 73%);
+  --bg-primary: hsl(222, 47%, 11%);
+  --bg-secondary: hsl(217, 32%, 17%);
+  --border-color: hsl(215, 27%, 32%);
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.6;
+    transition: var(--transition);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-6xl mx-auto px-5;
+  }
+
+  .difficulty-beginner {
+    @apply bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200;
+  }
+
+  .difficulty-intermediate {
+    @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200;
+  }
+
+  .difficulty-advanced {
+    @apply bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, hsl(221, 83%, 53%) 100%);
+  }
+
+  .card-hover {
+    transition: var(--transition);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .search-input {
+    @apply w-full max-w-md px-5 py-3 border-2 border-solid rounded-full text-base transition-all duration-300 ease-in-out;
+    border-color: var(--border-color);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px hsla(207, 90%, 54%, 0.1);
+  }
+
+  .filter-tab {
+    @apply px-5 py-2 border-2 border-solid rounded-full cursor-pointer transition-all duration-300 ease-in-out;
+    background-color: var(--bg-primary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+  }
+
+  .filter-tab.active,
+  .filter-tab:hover {
+    background-color: var(--primary-blue);
+    color: white;
+    border-color: var(--primary-blue);
+  }
+
+  .nav-link {
+    @apply relative text-base font-medium transition-all duration-300 ease-in-out;
+    color: var(--text-primary);
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--primary-blue);
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background: var(--primary-blue);
+  }
+
+  .stat-number {
+    @apply text-5xl font-bold block;
+    color: var(--primary-blue);
+  }
+
+  .cert-card {
+    @apply bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md border border-solid transition-all duration-300 ease-in-out;
+    border-color: var(--border-color);
+    background-color: var(--bg-primary);
+  }
+
+  .theme-toggle {
+    @apply bg-transparent border-2 border-solid rounded-full px-4 py-2 cursor-pointer transition-all duration-300 ease-in-out;
+    border-color: var(--border-color);
+    color: var(--text-primary);
+  }
+
+  .theme-toggle:hover {
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+  }
+
+  .cta-button {
+    @apply text-white px-8 py-3 border-none rounded-full text-lg font-semibold cursor-pointer transition-all duration-300 ease-in-out;
+    background-color: var(--accent-orange);
+  }
+
+  .cta-button:hover {
+    background-color: hsl(25, 95%, 45%);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .cert-button {
+    @apply w-full py-3 text-white border-none rounded-lg font-semibold cursor-pointer transition-all duration-300 ease-in-out;
+    background-color: var(--primary-blue);
+  }
+
+  .cert-button:hover {
+    background-color: hsl(221, 83%, 53%);
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    color: var(--text-primary);
+  }
+
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+
+  .bg-primary {
+    background-color: var(--bg-primary);
+  }
+
+  .bg-secondary {
+    background-color: var(--bg-secondary);
+  }
+
+  .border-color {
+    border-color: var(--border-color);
+  }
+
+  .rtl {
+    direction: rtl;
+  }
+
+  .ltr {
+    direction: ltr;
+  }
+}
