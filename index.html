@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مساري | My Career - دليل الشهادات المهنية في تقنية المعلومات</title>
+    <meta name="description" content="دليل شامل للشهادات المهنية في تقنية المعلومات للمحترفين السعوديين. اكتشف أفضل الشهادات المطلوبة في السوق السعودي.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h1 data-key="logo">مساري | My Career</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#hero" data-key="home">الرئيسية</a>
+                    <a href="#tracks" data-key="certifications">الشهادات</a>
+                    <a href="#about" data-key="about">نبذة</a>
+                    <a href="#contact" data-key="contact">تواصل</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <button class="lang-toggle" id="langToggle">
+                        <span class="lang-ar">ع</span>
+                        <span class="lang-en">EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-key="heroTitle">اكتشف أفضل الشهادات المهنية للمبتدئين والخريجين الجدد</h1>
+                    <p data-key="heroSubtitle">دليلك الشامل للحصول على الشهادات المهنية المناسبة لبداية حياتك المهنية في مجال تقنية المعلومات. شهادات معتمدة عالمياً، مناسبة للمبتدئين، وتؤهلك لسوق العمل.</p>
+                    <button class="cta-button" onclick="scrollToSection('tracks')" data-key="startJourney">
+                        ابدأ رحلتك المهنية
+                    </button>
+                </div>
+                <div class="hero-graphic">
+                    <svg width="400" height="300" viewBox="0 0 400 300" fill="none">
+                        <!-- Graduation Cap -->
+                        <path d="M200 50L350 100L200 150L50 100L200 50Z" fill="#2563eb" opacity="0.8"/>
+                        <path d="M200 50L350 100L200 150L50 100L200 50Z" stroke="#2563eb" stroke-width="2"/>
+                        <rect x="320" y="95" width="60" height="80" rx="5" fill="#f59e0b"/>
+                        <!-- Cloud -->
+                        <ellipse cx="120" cy="200" rx="40" ry="25" fill="#2563eb" opacity="0.3"/>
+                        <ellipse cx="140" cy="190" rx="35" ry="20" fill="#2563eb" opacity="0.4"/>
+                        <ellipse cx="100" cy="190" rx="30" ry="18" fill="#2563eb" opacity="0.5"/>
+                        <!-- Certificates -->
+                        <rect x="250" y="180" width="80" height="60" rx="8" fill="#f59e0b" opacity="0.7"/>
+                        <rect x="260" y="190" width="60" height="3" rx="1" fill="#fff"/>
+                        <rect x="260" y="200" width="40" height="3" rx="1" fill="#fff"/>
+                        <rect x="260" y="210" width="50" height="3" rx="1" fill="#fff"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number">40+</h3>
+                    <p class="stat-label" data-key="professionalCertifications">شهادة مهنية</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">8</h3>
+                    <p class="stat-label" data-key="careerTracks">مسارات مهنية</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">5K+</h3>
+                    <p class="stat-label" data-key="successfulProfessionals">متخصص نجح</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Tracks Section -->
+    <section id="tracks" class="tracks">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-key="certificationTracks">المسارات المهنية للمبتدئين والخريجين الجدد</h2>
+                <p data-key="tracksDescription">اختر المسار المناسب لك وابدأ رحلتك المهنية مع الشهادات المعتمدة عالمياً</p>
+            </div>
+
+            <div class="tracks-grid" id="tracksContainer">
+                <!-- Track cards will be dynamically generated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-key="whyUs">لماذا نحن؟</h2>
+                <p data-key="aboutDescription">نقدم لك دليلاً شاملاً ومُحدّثاً لأفضل الشهادات المهنية المناسبة للمبتدئين والخريجين الجدد</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12,2 15.09,8.26 22,9 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9 8.91,8.26 12,2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 data-key="contentQuality">جودة المحتوى</h3>
+                    <p data-key="contentQualityDesc">محتوى مُحدّث باستمرار ومراجع من خبراء في المجال لضمان الدقة والجودة.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 data-key="supportiveCommunity">مجتمع داعم</h3>
+                    <p data-key="supportiveCommunityDesc">انضم إلى مجتمع من المتخصصين والخبراء للحصول على الدعم والمشورة.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3 data-key="clearCareerPath">مسار مهني واضح</h3>
+                    <p data-key="clearCareerPathDesc">خريطة طريق واضحة لتطوير مهاراتك والتقدم في حياتك المهنية.</p>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-key="aboutTitle">نبذة عن المدرب</h2>
+                    <p data-key="aboutDescription2">
+                        مرحباً، أنا عبدالرحمن شحار، مدرب معتمد في مجال تقنية المعلومات مع خبرة واسعة في السوق السعودي. 
+                        أساعد المحترفين والخريجين الجدد على اختيار أفضل الشهادات المهنية التي تناسب احتياجات السوق المحلي.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong data-key="phone">الهاتف:</strong>
+                            <span>0536995517</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong data-key="email">البريد الإلكتروني:</strong>
+                            <span>Abdualrahman.a.sh@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+                            <circle cx="100" cy="100" r="80" fill="#2563eb" opacity="0.1"/>
+                            <circle cx="100" cy="80" r="30" fill="#2563eb" opacity="0.8"/>
+                            <path d="M40 160 Q100 120 160 160" stroke="#2563eb" stroke-width="4" fill="none"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h2 data-key="contactTitle">تواصل معنا</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-key="nameLabel">الاسم</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-key="emailLabel">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-key="messageLabel">الرسالة</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button" data-key="sendMessage">
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-key="logo">مساري | My Career</h3>
+                    <p data-key="footerDescription">دليلك الشامل للشهادات المهنية في تقنية المعلومات</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-key="quickLinks">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#hero" data-key="home">الرئيسية</a></li>
+                        <li><a href="#tracks" data-key="certifications">الشهادات</a></li>
+                        <li><a href="#about" data-key="about">نبذة</a></li>
+                        <li><a href="#contact" data-key="contact">تواصل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-key="contactInfo">معلومات التواصل</h4>
+                    <p><span data-key="phone">الهاتف:</span> 0536995517</p>
+                    <p><span data-key="email">البريد:</span> Abdualrahman.a.sh@gmail.com</p>
+                </div>
+            </div>
+            
+            <!-- Resume Download Section -->
+            <div class="download-cv-section">
+                <div class="text-center">
+                    <h3 data-key="downloadCV">تحميل السيرة الذاتية</h3>
+                    <p data-key="downloadCVDescription">تحميل السيرة الذاتية للمدرب عبدالرحمن شحار للاطلاع على خبراته ومؤهلاته في مجال تقنية المعلومات والتدريب المهني.</p>
+                    <button onclick="downloadCV()" class="download-cv-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7,10 12,15 17,10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span data-key="downloadCVButton">تحميل السيرة الذاتية</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span data-key="logo">مساري | My Career</span>. <span data-key="rightsReserved">كل الحقوق محفوظة</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
